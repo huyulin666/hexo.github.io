@@ -114,8 +114,7 @@ function getAppEnvConfig(){
   const C=getConfigFileName(
     {VITE_BUILD_COMPRESS:"none",VITE_GLOB_API_URL:"/basic-api",VITE_GLOB_API_URL_PREFIX:"",VITE_GLOB_APP_SHORT_NAME:"DetectSpace",VITE_GLOB_APP_TITLE:"deepfakeDetect",VITE_GLOB_UPLOAD_URL:"/upload",VITE_PUBLIC_PATH:"/hexo.github.io/",VITE_USE_MOCK:"true",VITE_DROP_CONSOLE:"true",VITE_BUILD_COMPRESS_DELETE_ORIGIN_FILE:"false",VITE_USE_IMAGEMIN:"true",VITE_USE_PWA:"false",VITE_LEGACY:"false",VITE_PORT:"3100",BASE_URL:"/hexo.github.io/",MODE:"production",DEV:!1,PROD:!0}
     );
-  const H=window[C],
-    {VITE_GLOB_APP_TITLE:U,VITE_GLOB_API_URL:K,VITE_GLOB_APP_SHORT_NAME:W,VITE_GLOB_API_URL_PREFIX:G,VITE_GLOB_UPLOAD_URL:Z}=H;
+  const {VITE_GLOB_APP_TITLE:U,VITE_GLOB_API_URL:K,VITE_GLOB_APP_SHORT_NAME:W,VITE_GLOB_API_URL_PREFIX:G,VITE_GLOB_UPLOAD_URL:Z}=window[C];
   return/^[a-zA-Z\_]*$/.test(W)||warn$1("VITE_GLOB_APP_SHORT_NAME Variables can only be characters/underscores, please modify in the environment variables and re-running."),
   {VITE_GLOB_APP_TITLE:U,VITE_GLOB_API_URL:K,VITE_GLOB_APP_SHORT_NAME:W,VITE_GLOB_API_URL_PREFIX:G,VITE_GLOB_UPLOAD_URL:Z}
 }
